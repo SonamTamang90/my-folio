@@ -15,3 +15,9 @@
   --alt-font: "Bebas Neue", cursive;
   --primary-font: "Inter", sans-serif;
 }
+
+@layer base {
+  body {
+   @apply dark:bg-dark-900 dark:text-white;
+  }
+}
