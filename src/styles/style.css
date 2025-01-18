@@ -14,6 +14,12 @@
   --medium-slate-blue: #21211e;
   --alt-font: "Bebas Neue", cursive;
   --primary-font: "Inter", sans-serif;
+  --color-1: "#67e7d8";
+  --color-2: "#f5c311";
+  --color-3: "#333481";
+  --color-4: "#ef6848"
+
+  
 }
 
 @layer base {
