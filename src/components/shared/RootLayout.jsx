@@ -1,15 +1,15 @@
 import { Outlet } from "react-router-dom";
-import Footer from "./Footer";
-import Header from "./Header";
+import Sidebar from "./Sidebar";
 
 const RootLayout = () => {
   return (
     <div className="min-h-screen">
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
+      <div className="flex">
+        <Sidebar />
+        <main>
+          <Outlet />
+        </main>
+      </div>
     </div>
   );
 };

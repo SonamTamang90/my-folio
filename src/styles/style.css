@@ -17,13 +17,11 @@
   --color-1: "#67e7d8";
   --color-2: "#f5c311";
   --color-3: "#333481";
-  --color-4: "#ef6848"
-
-  
+  --color-4: "#ef6848"  
 }
 
 @layer base {
   body {
-   @apply dark:bg-dark-900 dark:text-white;
+    @apply dark:bg-dark-900 dark:text-white;
   }
 }
