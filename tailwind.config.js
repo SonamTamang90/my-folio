@@ -6,20 +6,18 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        bebas: ["Bebas Neue", "sans-serif"],
+        bebas: ["Bebas Neue", "serif"],
       },
 
       colors: {
         base: "#997F00",
         dark: {
-          900: "#0D0D0B",
-          800: "#1C1C1C",
-          700: "#0C0C0B",
-          600: "#21211E",
-          500: "#242424",
-          400: "#2C2C2C",
-          200: "#393939",
-          100: "#6F7071",
+          900: "#161616",
+          700: "#1C1C1C",
+          400: "#858585",
+          300: "#242424",
+          200: "#2C2C2C",
+          100: "#393939",
         },
       },
     },
