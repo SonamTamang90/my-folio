@@ -7,9 +7,9 @@ const GlobalLayout = () => {
   return (
     <div className="min-h-screen">
       <Sidebar />
-      <div className="lg:pl-64">
+      <div className="flex flex-col min-h-screen lg:pl-[240px]">
         <Header />
-        <main>
+        <main className="flex-1 overflow-y-auto">
           <Outlet />
         </main>
         <Footer />

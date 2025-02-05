@@ -1,6 +1,10 @@
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+:root {
+  --border: 0 0% 14.9%;
+}
+
 /* Tailwind directives */
 @tailwind base;
 @tailwind utilities;
@@ -9,5 +13,20 @@
 @layer base {
   body {
     @apply h-full dark:bg-dark-900 dark:text-white text-sm;
+    /* color: rgb(173, 255, 47); */
   }
+}
+
+.bg-dashed {
+  background-image: linear-gradient(
+    45deg,
+    hsl(var(--border)) 12.5%,
+    transparent 12.5%,
+    transparent 50%,
+    hsl(var(--border)) 50%,
+    hsl(var(--border)) 62.5%,
+    transparent 62.5%,
+    transparent 100%
+  );
+  background-size: 0.25rem 0.25rem;
 }
