@@ -1,8 +1,12 @@
 const Card = ({ title, subtitle, description, graphic, status }) => {
   return (
     <div className="relative bg-dashed ring-1 dark:ring-dark-300 rounded-md shadow">
-      <div className="relative h-64  p-6 overflow-hidden rounded-md">
-        <img src={graphic} alt={title} className="size-full rounded-md" />
+      <div className="relative h-64 p-6 overflow-hidden rounded-md shrink-0">
+        <img
+          src={graphic}
+          alt={title}
+          className="object-cover w-full h-full rounded-md"
+        />
       </div>
       <div className="px-6 pb-6">
         <div className="flex items-center justify-between mb-2">

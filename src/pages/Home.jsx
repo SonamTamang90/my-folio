@@ -33,20 +33,20 @@ const Hero = () => {
 
 const ProjectsHighlights = () => {
   return (
-    <section className="lg:pt-24">
-      <h2 className="font-bebas text-xl tracking-wider mb-11">
+    <section className="lg:pt-20">
+      <h2 className="font-bebas text-xl tracking-wider mb-8">
         Projects Highlights
       </h2>
       <div className="grid grid-cols-2 gap-6 mb-11">
         <Card
           title="Unwind Cabin"
-          graphic="/profile.png"
+          graphic="/unwind-cabin.png"
           description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
           status="active"
         />
         <Card
           title="My Folio"
-          graphic="/competitors.png"
+          graphic="/profile.png"
           description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
           status="completed"
         />
@@ -64,9 +64,8 @@ const Home = () => {
         repositories={[
           { owner: "SonamTamang90", repo: "unwind-cabin" },
           { owner: "SonamTamang90", repo: "my-folio" },
-          // Add more repositories as needed
         ]}
-        token={GITHUB_TOKEN} // Optional
+        token={GITHUB_TOKEN}
       />
     </div>
   );
