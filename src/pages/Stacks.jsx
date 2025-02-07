@@ -1,138 +1,165 @@
-const devtools = [
+const stacks = [
   {
+    id: 1,
     name: "Visual Studio Code",
-    intro: "Code Editor",
+    description: "Code Editor",
     icon: "/icons/vscode.svg",
-    description:
-      "Best open source code editor with tons of extensions to make your own.",
   },
   {
+    id: 2,
     name: "Google Chrome",
-    intro: "Web Browser",
+    description: "Web Browser",
     icon: "/icons/chrome.svg",
-    description:
-      "Best open source code editor with tons of extensions to make your own.",
   },
   {
+    id: 3,
     name: "Notion",
-    intro: "Note Taking",
+    description: "Note Taking",
     icon: "/icons/notion.svg",
-    description:
-      "Best open source code editor with tons of extensions to make your own.",
-  },
-];
-
-const frameworks = [
-  {
-    name: "React",
-    intro: "Proficient",
-    icon: "/icons/react.svg",
-    description: "Most popular javascript library",
   },
   {
-    name: "React Router",
-    intro: "Proficient",
-    icon: "/icons/reactrouter.svg",
-  },
-  {
-    name: "React Query",
-    intro: "Proficient",
-    icon: "/icons/reactquery.svg",
-    description:
-      "Best open source code editor with tons of extensions to make your own.",
-  },
-  {
-    name: "Next JS",
-    intro: "Intermediate",
-    icon: "/icons/nextjs.svg",
-  },
-  {
-    name: "Tailwind CSS",
-    intro: "Proficient",
-    icon: "/icons/tailwindcss.svg",
-  },
-  {
-    name: "Shadcn",
-    intro: "Proficient",
-    icon: "/icons/shadcn.svg",
-  },
-];
-
-const languages = [
-  {
-    name: "Html",
-    intro: "Proficient",
+    id: 4,
+    name: "HTML",
+    description: "Proficient",
     icon: "/icons/html.svg",
   },
   {
+    id: 5,
     name: "CSS",
-    intro: "Proficient",
+    description: "Proficient",
     icon: "/icons/css.svg",
   },
   {
+    id: 6,
+    name: "SASS",
+    description: "Proficient",
+    icon: "/icons/sass.svg",
+  },
+  {
+    id: 7,
+    name: "Tailwind CSS",
+    description: "Proficient",
+    icon: "/icons/tailwindcss.svg",
+  },
+  {
+    id: 8,
     name: "Javascript",
-    intro: "Proficient",
+    description: "Proficient",
     icon: "/icons/javascript.svg",
+  },
+  {
+    id: 9,
+    name: "React JS",
+    description: "Intermediate",
+    icon: "/icons/react.svg",
+  },
+  {
+    id: 10,
+    name: "React Router",
+    description: "Proficient",
+    icon: "/icons/reactrouter.svg",
+  },
+  {
+    id: 10,
+    name: "React Query",
+    description: "Proficient",
+    icon: "/icons/reactquery.svg",
+  },
+  {
+    id: 11,
+    name: "Redux",
+    description: "Intermediate",
+    icon: "/icons/redux.svg",
+  },
+  {
+    id: 12,
+    name: "Next JS",
+    description: "Intermediate",
+    icon: "/icons/nextjs.svg",
+  },
+  {
+    id: 13,
+    name: "Supabase",
+    description: "Proficient",
+    icon: "/icons/supabase.svg",
+  },
+  {
+    id: 14,
+    name: "Python",
+    description: "Basic",
+    icon: "/icons/python.svg",
+  },
+  {
+    id: 15,
+    name: "Git",
+    description: "Proficient",
+    icon: "/icons/git.svg",
+  },
+  {
+    id: 16,
+    name: "GitHub",
+    description: "Proficient",
+    icon: "/icons/github-dark.svg",
   },
 ];
 
-const Item = ({ tool }) => {
+const Stack = ({ stack }) => {
+  const { name, description, icon } = stack;
   return (
     <div className="flex items-center gap-2">
-      <div className="dark:bg-dark-700 p-2 rounded-md border dark:border-dark-300 flex items-center justify-center h-12 w-12 overflow-hidden">
-        <img src={tool.icon} alt="vs code logo" className="w-full" />
+      <div className="h-12 w-12 flex items-center justify-center dark:bg-dark-700 border dark:border-dark-300 p-2 rounded-md shadow-sm">
+        <img src={icon} alt={name} className="w-full" />
       </div>
       <div className="dark:text-dark-400">
-        <h4>{tool.name}</h4>
-        <p className="text-xs">{tool.intro}</p>
+        <h4>{name}</h4>
+        <p className="text-xs">{description}</p>
       </div>
     </div>
   );
 };
 
 const Stacks = () => {
+  const gitIndex = stacks.findIndex((stack) => stack.name === "Git");
   return (
     <>
       <div className="max-w-7xl mx-auto lg:px-11">
         <h1 className="font-bebas lg:text-6xl tracking-wide mb-5">Stacks</h1>
         <p className="max-w-lg lg:text-lg dark:text-dark-400">
           A tools and software I used on daily basis to build websites and web
-          applications and productivity.
+          applications.
         </p>
 
-        <div className="lg:pt-20 space-y-11">
-          <div className="">
-            <h3 className="font-bebas text-xl tracking-wider mb-6">
-              Developement & Productivity tools
-            </h3>
-            <div className="bg-dashed dark:border-dark-300 p-6">
-              <div className="grid grid-cols-3">
-                {devtools.map((tool) => (
-                  <Item key={tool.name} tool={tool} />
+        <div className="bg-dashed border dark:border-dark-300 rounded-md p-6 lg:mt-11">
+          <div className="flex flex-col divide-y divide-gray-200 dark:divide-dark-300">
+            {/* First row (3 items) */}
+            <div className="pb-6">
+              <div className="text-xs dark:text-dark-400 mb-2">
+                Development Tools
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                {stacks.slice(0, 3).map((stack) => (
+                  <Stack key={stack.id} stack={stack} />
                 ))}
               </div>
             </div>
-          </div>
-          <div className="">
-            <h3 className="font-bebas text-xl tracking-wider mb-6">
-              Frameworks & Libraries
-            </h3>
-            <div className="bg-dashed dark:border-dark-300 p-6">
-              <div className="grid grid-cols-3 gap-6">
-                {frameworks.map((tool) => (
-                  <Item key={tool.name} tool={tool} />
+
+            {/* Middle section */}
+            <div className="py-6">
+              <div className="text-xs dark:text-dark-400 mb-2">
+                Technical Skills
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                {stacks.slice(3, gitIndex).map((stack) => (
+                  <Stack key={stack.id} stack={stack} />
                 ))}
               </div>
             </div>
-          </div>
-          <div className="">
-            <h3 className="font-bebas text-xl tracking-wider mb-6">
-              Frontend Languages
-            </h3>
-            <div className=" dark:border-dark-300 p-6">
-              <div className="grid grid-cols-3 gap-6">
-                {languages.map((tool) => (
-                  <Item key={tool.name} tool={tool} />
+
+            {/* Last section (Git and GitHub) */}
+            <div className="pt-6">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                {stacks.slice(gitIndex).map((stack) => (
+                  <Stack key={stack.id} stack={stack} />
                 ))}
               </div>
             </div>
