@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "slug": "ui-elements-library",
+      "featured": true,
+      "title": "UI Elements Libray",
+      "description": "Free open source collections of copy and paste ui components for React, HTML styled using Tailwind.",
+      "technologies": ["React", "Javascript", "Tailwind"],
+      "features": [
+        "User authentication",
+        "Product catalog",
+        "Shopping cart",
+        "Payment integration"
+      ],
+      "images": ["/"],
+      "liveUrl": "https://example.com",
+      "githubUrl": "https://github.com/example",
+      "role": "Full Stack Developer"
+    },
+    {
+      "id": 2,
+      "slug": "my-folio",
+      "featured": true,
+      "title": "My Folio",
+      "description": "A dark theme responsive personal portfolio website used to showcase projects and details.",
+      "technologies": ["React", "OpenWeather API", "Mapbox"],
+      "features": [
+        "Current weather conditions",
+        "Five-day forecast",
+        "Interactive weather maps",
+        "Location-based services"
+      ],
+      "images": ["/api/placeholder/800/400"],
+      "liveUrl": "https://weather-example.com",
+      "githubUrl": "https://github.com/example/weather",
+      "role": "Frontend Developer"
+    }
+  ]
+}

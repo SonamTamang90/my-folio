@@ -30,3 +30,7 @@
   );
   background-size: 0.25rem 0.25rem;
 }
+
+.timeline:not(:last-child) {
+  padding-bottom: 0;
+}

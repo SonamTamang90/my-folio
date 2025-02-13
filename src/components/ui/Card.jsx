@@ -5,7 +5,7 @@ const Card = ({ title, subtitle, description, graphic, status }) => {
         <img
           src={graphic}
           alt={title}
-          className="object-cover w-full h-full rounded-md"
+          className="object-cover w-full rounded-md"
         />
       </div>
       <div className="px-6 pb-6">

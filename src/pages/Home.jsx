@@ -10,8 +10,8 @@ const Hero = () => {
         Hey, I'm Sonam
       </h1>
       <p className="max-w-lg lg:text-lg dark:text-dark-400">
-        A dedicated UI Engineer passionate for building beautiful web
-        application using cutting edge technologies while writing clean code.
+        A passionate Software Engineer specializing in crafting elegant frontend
+        web experiences with a keen eye for user interface design.
       </p>
       <div className="flex items-center gap-6 mt-8">
         <Link
@@ -39,15 +39,15 @@ const ProjectsHighlights = () => {
       </h2>
       <div className="grid grid-cols-2 gap-6 mb-11">
         <Card
-          title="Unwind Cabin"
-          graphic="/unwind-cabin.png"
-          description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+          title="UI Elements Library"
+          graphic="/images/project-1.png"
+          description="Free open source collections of copy and paste UI elements for React, HTML styled using Tailwind."
           status="active"
         />
         <Card
           title="My Folio"
-          graphic="/profile.png"
-          description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+          graphic="/images/project-2.png"
+          description="Dark theme Personal Portfolio website built using React, Javascript and Tailwind."
           status="completed"
         />
       </div>
