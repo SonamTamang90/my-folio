@@ -57,7 +57,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="">
+        <div className="mt-20">
           <h2 className="font-bebas text-xl tracking-wider mb-8">
             Work Experience
           </h2>

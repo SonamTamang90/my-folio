@@ -1,4 +1,5 @@
 import Card from "../components/ui/Card";
+import { projects } from "../data/projects";
 
 const Projects = () => {
   return (
@@ -10,30 +11,17 @@ const Projects = () => {
         </p>
 
         <div className="grid grid-cols-2 gap-6 mt-11">
-          <Card
-            title="Unwind Cabin"
-            graphic="/unwind-cabin.png"
-            description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
-            status="active"
-          />
-          <Card
-            title="My Folio"
-            graphic="/profile.png"
-            description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
-            status="completed"
-          />
-          <Card
-            title="My Folio"
-            graphic="/profile.png"
-            description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
-            status="completed"
-          />
-          <Card
-            title="My Folio"
-            graphic="/profile.png"
-            description="Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
-            status="completed"
-          />
+          {projects &&
+            projects.map((project) => (
+              <Card
+                key={project.id}
+                title={project.title}
+                graphic={project.images}
+                description={project.description[0]}
+                status={project.status}
+                slug={project.slug}
+              />
+            ))}
         </div>
       </div>
     </>

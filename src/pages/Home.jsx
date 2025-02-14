@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Card from "../components/ui/Card";
 import CommitActivity from "../components/ui/CommitsActivity";
 import { GITHUB_TOKEN } from "../../config";
+import { projects } from "../data/projects";
 
 const Hero = () => {
   return (
@@ -32,24 +33,23 @@ const Hero = () => {
 };
 
 const ProjectsHighlights = () => {
+  const featuredProject = projects.filter((project) => project.featured);
   return (
     <section className="lg:pt-20">
       <h2 className="font-bebas text-xl tracking-wider mb-8">
         Projects Highlights
       </h2>
       <div className="grid grid-cols-2 gap-6 mb-11">
-        <Card
-          title="UI Elements Library"
-          graphic="/images/project-1.png"
-          description="Free open source collections of copy and paste UI elements for React, HTML styled using Tailwind."
-          status="active"
-        />
-        <Card
-          title="My Folio"
-          graphic="/images/project-2.png"
-          description="Dark theme Personal Portfolio website built using React, Javascript and Tailwind."
-          status="completed"
-        />
+        {featuredProject.map((project) => (
+          <Card
+            key={project.id}
+            title={project.title}
+            graphic={project.images}
+            description={project.description}
+            status={project.status}
+            slug={project.slug}
+          />
+        ))}
       </div>
     </section>
   );
@@ -62,8 +62,8 @@ const Home = () => {
       <ProjectsHighlights />
       <CommitActivity
         repositories={[
-          { owner: "SonamTamang90", repo: "unwind-cabin" },
           { owner: "SonamTamang90", repo: "my-folio" },
+          { owner: "SonamTamang90", repo: "unwind-cabin" },
         ]}
         token={GITHUB_TOKEN}
       />
