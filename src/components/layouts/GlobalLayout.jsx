@@ -24,7 +24,7 @@ const GlobalLayout = () => {
 
       <div className="flex flex-col min-h-screen lg:pl-[240px]">
         <Header />
-        <main className="flex-1 overflow-y-auto lg:pb-20">
+        <main className="flex-1 overflow-y-auto lg:pb-11">
           <Outlet />
         </main>
         <Footer />
