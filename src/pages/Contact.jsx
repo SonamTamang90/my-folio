@@ -10,8 +10,8 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto lg:px-11">
-        <h1 className="font-bebas lg:text-6xl tracking-wide mb-5">Contact</h1>
+      <div className="max-w-7xl mx-auto px-11">
+        <h1 className="font-bebas text-6xl tracking-wide mb-5">Contact</h1>
         <p className="max-w-lg lg:text-lg dark:text-dark-400">
           Get in touch with me throught the following details. I'm always open
           to discussing new opportunities and collaborations.

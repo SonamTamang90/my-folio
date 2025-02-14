@@ -7,10 +7,8 @@ import { projects } from "../data/projects";
 const Hero = () => {
   return (
     <section>
-      <h1 className="font-bebas lg:text-6xl tracking-wide mb-5">
-        Hey, I'm Sonam
-      </h1>
-      <p className="max-w-lg lg:text-lg dark:text-dark-400">
+      <h1 className="font-bebas text-6xl tracking-wide mb-5">Hey, I'm Sonam</h1>
+      <p className="max-w-lg text-base lg:text-lg dark:text-dark-400">
         A passionate Software Engineer specializing in crafting elegant frontend
         web experiences with a keen eye for user interface design.
       </p>
@@ -22,7 +20,7 @@ const Hero = () => {
           About
         </Link>
         <Link
-          to="/about"
+          to="/contact"
           className="dark:border-dark-100 border px-5 py-2.5 rounded-md transition-colors hover:dark:bg-dark-200"
         >
           Get in touch
@@ -35,17 +33,17 @@ const Hero = () => {
 const ProjectsHighlights = () => {
   const featuredProject = projects.filter((project) => project.featured);
   return (
-    <section className="lg:pt-20">
+    <section className="pt-16 lg:pt-20">
       <h2 className="font-bebas text-xl tracking-wider mb-8">
         Projects Highlights
       </h2>
-      <div className="grid grid-cols-2 gap-6 mb-11">
+      <div className="grid sm:grid-cols-2 gap-6 mb-11">
         {featuredProject.map((project) => (
           <Card
             key={project.id}
             title={project.title}
             graphic={project.images}
-            description={project.description}
+            description={project.intro}
             status={project.status}
             slug={project.slug}
           />
@@ -57,7 +55,7 @@ const ProjectsHighlights = () => {
 
 const Home = () => {
   return (
-    <div className="max-w-5xl mx-auto lg:px-11">
+    <div className="max-w-5xl mx-auto px-8 lg:px-11">
       <Hero />
       <ProjectsHighlights />
       <CommitActivity

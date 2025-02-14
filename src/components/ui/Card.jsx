@@ -5,7 +5,7 @@ const Card = ({ title, subtitle, description, graphic, status, slug }) => {
   return (
     <Link to={`/projects/${slug}`}>
       <div className="relative bg-dashed ring-1 dark:ring-dark-300 rounded-md shadow group">
-        <div className="relative h-64 p-6 overflow-hidden rounded-md shrink-0">
+        <div className="relative h-46 md:h-64 p-6 overflow-hidden rounded-md shrink-0">
           <img
             src={graphic}
             alt={title}

@@ -28,10 +28,10 @@ const experience = [
 const About = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto lg:px-11">
-        <h1 className="font-bebas lg:text-6xl tracking-wide mb-5">About</h1>
-        <div className="flex items-start gap-8">
-          <div className="max-w-lg lg:text-base dark:text-dark-400 space-y-6">
+      <div className="max-w-7xl mx-auto px-11">
+        <h1 className="font-bebas text-6xl tracking-wide mb-5">About</h1>
+        <div className="flex flex-col md:flex-row items-start gap-11 md:gap-8">
+          <div className="max-w-lg text-base dark:text-dark-400 space-y-6">
             <p>
               Hi, I'm Sonam Tamang, I have 2+ years of experience in building
               websites and engaging, user-friendly user inteface.
@@ -57,7 +57,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="mt-20">
+        <div className="mt-20 pb-20">
           <h2 className="font-bebas text-xl tracking-wider mb-8">
             Work Experience
           </h2>

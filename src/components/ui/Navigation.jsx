@@ -30,7 +30,7 @@ const links = [
   },
 ];
 
-const Navigation = () => {
+const Navigation = ({ setIsMobile }) => {
   const { pathname } = useLocation();
 
   return (
@@ -39,7 +39,11 @@ const Navigation = () => {
         {links.map(({ label, href, icon: Icon }) => {
           const isActive = pathname === href;
           return (
-            <li key={label} className="relative">
+            <li
+              key={label}
+              className="relative"
+              onClick={() => setIsMobile(false)}
+            >
               {isActive && (
                 <motion.div
                   layoutId="active-nav"
