@@ -122,7 +122,7 @@ const Stacks = () => {
   const gitIndex = stacks.findIndex((stack) => stack.name === "Git");
   return (
     <>
-      <div className="max-w-7xl mx-auto px-11 pb-20">
+      <div className="max-w-5xl mx-auto px-11 pb-20">
         <h1 className="font-bebas text-6xl tracking-wide mb-5">Stacks</h1>
         <p className="max-w-lg text-lg dark:text-dark-400">
           A tools and software I used on daily basis to build websites and web

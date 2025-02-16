@@ -28,7 +28,7 @@ const experience = [
 const About = () => {
   return (
     <>
-      <div className="max-w-7xl mx-auto px-11">
+      <div className="max-w-5xl mx-auto px-11">
         <h1 className="font-bebas text-6xl tracking-wide mb-5">About</h1>
         <div className="flex flex-col md:flex-row items-start gap-11 md:gap-8">
           <div className="max-w-lg text-base dark:text-dark-400 space-y-6">

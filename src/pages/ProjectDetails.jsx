@@ -13,15 +13,15 @@ const ProjectDetails = () => {
   console.log(project);
 
   return (
-    <div className="relative max-w-7xl mx-auto lg:px-11">
+    <div className="relative max-w-5xl mx-auto lg:px-11">
       <BackButton />
-      <h1 className="font-bebas lg:text-6xl tracking-wide mb-5">
+      <h1 className="font-bebas lg:text-6xl tracking-wide mb-11">
         {project.title}
       </h1>
       <img
-        src={project.images}
+        src="/images/background-2.png"
         alt={project.title}
-        className="aspect-square mb-11"
+        className="aspect-square mb-11 rounded-md"
       />
       <div className="max-w-2xl text-base tracking-wide dark:text-dark-400 space-y-6">
         <p>{project.description[0]}</p>
