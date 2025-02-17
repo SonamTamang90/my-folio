@@ -61,7 +61,7 @@ const Home = () => {
       <CommitActivity
         repositories={[
           { owner: "SonamTamang90", repo: "my-folio" },
-          { owner: "SonamTamang90", repo: "unwind-cabin" },
+          { owner: "SonamTamang90", repo: "ui-elements" },
         ]}
         token={GITHUB_TOKEN}
       />
