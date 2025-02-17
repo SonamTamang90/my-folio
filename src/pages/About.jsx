@@ -43,7 +43,7 @@ const About = () => {
               or individuals to bring ideas to life.
             </p>
             <p>
-              I'm passionate about writing clearn, efficient code and
+              I'm passionate about writing clean, efficient code and
               continuously learning to staty updated with the latest web
               technologies.
             </p>

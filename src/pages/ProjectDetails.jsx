@@ -21,7 +21,7 @@ const ProjectDetails = () => {
       <img
         src="/images/background-2.png"
         alt={project.title}
-        className="aspect-square mb-11 rounded-md"
+        className="mb-11 rounded-md"
       />
       <div className="max-w-2xl text-base tracking-wide dark:text-dark-400 space-y-6">
         <p>{project.description[0]}</p>

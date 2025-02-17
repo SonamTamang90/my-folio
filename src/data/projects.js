@@ -31,7 +31,7 @@ export const projects = [
     title: "My Folio",
     featured: true,
     intro:
-      "A modern dark-themed personal portfolio website exhibiting creative projects and workflows, crafted with React and Tailwind CSS.",
+      "My Personal Portfolio website buid using React, Javascript, Tailwind, and framer motion for animation.",
     description: [
       "Modern responsive personal portfolio website",
       "Engineered an elegant dark-themed portfolio platform that seamlessly balances professional presentation with exceptional user experience.",

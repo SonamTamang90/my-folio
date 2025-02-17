@@ -1,5 +1,6 @@
 import { HiArrowUpRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Card = ({ title, subtitle, description, graphic, status, slug }) => {
   return (
@@ -13,7 +14,7 @@ const Card = ({ title, subtitle, description, graphic, status, slug }) => {
           />
         </div>
         <div className="px-6 pb-6">
-          <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center justify-between mb-6">
             <h3 className="text-lg dark:text-white tracking-wider font-semibold font-bebas">
               {title}
             </h3>
@@ -30,9 +31,18 @@ const Card = ({ title, subtitle, description, graphic, status, slug }) => {
 
           <p className="dark:text-dark-400">{description}</p>
         </div>
-        <div className="absolute top-8 right-8 bg-dark-900 p-1.5 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <motion.div
+          initial={{
+            scale: 0.5,
+          }}
+          animate={{
+            scale: 1,
+            transition: { duration: 300, ease: "easeInOut" },
+          }}
+          className="absolute top-10 right-11 bg-dark-700 border border-dark-300 p-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
           <HiArrowUpRight />
-        </div>
+        </motion.div>
       </div>
     </Link>
   );
