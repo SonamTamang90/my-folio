@@ -9,8 +9,8 @@ const Hero = () => {
     <section>
       <h1 className="font-bebas text-6xl tracking-wide mb-5">Hey, I'm Sonam</h1>
       <p className="max-w-lg text-base lg:text-lg dark:text-dark-400">
-        A passionate Software Engineer specializing in crafting elegant frontend
-        web experiences with a keen eye for user interface design.
+        Creative Frontend Developer focused on building engaging user interfaces
+        and modern websites with precision and attention to detail.
       </p>
       <div className="flex items-center gap-6 mt-8">
         <Link

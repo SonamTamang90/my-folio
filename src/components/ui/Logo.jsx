@@ -10,7 +10,7 @@ const Logo = () => {
       />
       <h4>
         <span className="block">Sonam Tamang</span>
-        <span className="block text-dark-400">Software Engineer</span>
+        <span className="block text-dark-400">Frontend Developer</span>
       </h4>
     </Link>
   );
