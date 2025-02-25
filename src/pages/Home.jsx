@@ -3,6 +3,7 @@ import Card from "../components/ui/Card";
 import CommitActivity from "../components/ui/CommitsActivity";
 import { GITHUB_TOKEN } from "../../config";
 import { projects } from "../data/projects";
+import { HiOutlineArrowRight } from "react-icons/hi2";
 
 const Hero = () => {
   return (
@@ -34,9 +35,19 @@ const ProjectsHighlights = () => {
   const featuredProject = projects.filter((project) => project.featured);
   return (
     <section className="pt-16 lg:pt-20">
-      <h2 className="font-bebas text-xl tracking-wider mb-8">
-        Projects Highlights
-      </h2>
+      <div className="flex items-center justify-between">
+        <h2 className="font-bebas text-xl tracking-wider mb-8">
+          Projects Highlights
+        </h2>
+        <Link
+          to="/projects"
+          className="text-sm group transition-colors duration-300 hover:text-white text-dark-400 uppercase mb-6 flex items-center gap-2"
+        >
+          <span>See All Projects</span>
+          <HiOutlineArrowRight className="transition-all duration-300 -translate-x-4 opacity-0 group-hover:opacity-100 transform group-hover:translate-x-0" />
+        </Link>
+      </div>
+
       <div className="grid sm:grid-cols-2 gap-6 mb-11">
         {featuredProject.map((project) => (
           <Card
