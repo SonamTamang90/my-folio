@@ -30,7 +30,7 @@ const ProjectDetails = () => {
       </div>
       <div className="my-11">
         <h2 className="font-bebas text-xl tracking-wider mb-8">Tools Used</h2>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-3">
           {project.technologies.map((technology, index) => (
             <div
               key={index}
