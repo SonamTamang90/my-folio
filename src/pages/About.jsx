@@ -63,13 +63,13 @@ const About = () => {
           <h2 className="font-bebas text-xl tracking-wider mb-8">
             Work Experience
           </h2>
-          <div className="bg-dashed p-6 border border-dark-300">
+          <div className="bg-dashed py-6 px-3 md:p-6 border border-dark-300">
             <ul className="max-w-lg space-y-6">
               <li className="relative flex gap-x-4 pb-11">
                 <div className="absolute -bottom-6 left-0 top-0 flex w-6 justify-center">
                   <div className="w-px bg-dark-400"></div>
                 </div>
-                <div className="relative flex size-6 flex-none items-center justify-center bg-dark-700">
+                <div className="relative flex flex-wrap size-6 flex-none items-center justify-center bg-dark-700">
                   <div className="size-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
                 </div>
                 <div className="flex-auto py-0.5 text-sm">
@@ -79,19 +79,24 @@ const About = () => {
                       target="_blank"
                       className="flex items-start gap-1 group"
                     >
-                      <span className="block">Metcash Trading Ltd</span>
+                      <span className="block text-nowrap">
+                        Metcash Trading Ltd
+                      </span>
                       <HiArrowUpRight
                         size={12}
                         className="transition-opacity duration-300 group-hover:opacity-100 opacity-0"
                       />
                     </Link>
-                    <p className="space-y-1  text-dark-400">
+                    <p className="space-y-1 text-nowrap pb-2 md:pb-0  text-dark-400">
                       <span className="block">Store Person </span>
                       <spna>Perth, Australia</spna>
                     </p>
+                    <time className="md:hidden flex-none py-0.5 text-sm text-dark-400">
+                      Feb 2022 - Till Date
+                    </time>
                   </div>
                 </div>
-                <time className="flex-none py-0.5 text-sm text-dark-400">
+                <time className="hidden md:block flex-none py-0.5 text-sm text-dark-400">
                   Feb 2022 - Till Date
                 </time>
               </li>
@@ -109,19 +114,24 @@ const About = () => {
                       target="_blank"
                       className="flex items-start gap-1 group"
                     >
-                      <span className="block">Selise Digital Platforms</span>
+                      <span className="block text-nowrap">
+                        Selise Digital Platforms
+                      </span>
                       <HiArrowUpRight
                         size={12}
                         className="transition-opacity duration-300 group-hover:opacity-100 opacity-0"
                       />
                     </Link>
-                    <p className="space-y-1 text-dark-400">
+                    <p className="space-y-1 text-dark-400 text-nowrap pb-2 md:pb-0">
                       <span className="block">UI Engineer</span>
                       <span>Thimphu, Bhutan</span>
                     </p>
+                    <time className="flex-none py-0.5 text-sm text-dark-400">
+                      Feb 2021 - Oct 2022
+                    </time>
                   </div>
                 </div>
-                <time className="flex-none py-0.5 text-sm text-dark-400">
+                <time className="hidden md:blockflex-none py-0.5 text-sm text-dark-400">
                   Feb 2021 - Oct 2022
                 </time>
               </li>
@@ -139,19 +149,24 @@ const About = () => {
                       target="_blank"
                       className="flex items-start group gap-1"
                     >
-                      <span className="block">Multirational Pty Ltd</span>
+                      <span className="block text-nowrap">
+                        Multirational Pty Ltd
+                      </span>
                       <HiArrowUpRight
                         size={12}
                         className="transition-opacity duration-300 group-hover:opacity-100 opacity-0"
                       />
                     </Link>
-                    <p className="space-y-1 text-dark-400">
+                    <p className="space-y-1 text-dark-400 text-nowrap pb-2 md:pb-0">
                       <span className="block">QA Tester</span>
                       <span>Thimphu, Bhutan</span>
                     </p>
+                    <time className="md:hidden flex-none py-0.5 text-sm text-dark-400">
+                      Jan 2016 - Jan 2021
+                    </time>
                   </div>
                 </div>
-                <time className="flex-none py-0.5 text-sm text-dark-400">
+                <time className="hidden md:block flex-none py-0.5 text-sm text-dark-400">
                   Jan 2016 - Jan 2021
                 </time>
               </li>
@@ -166,21 +181,24 @@ const About = () => {
                       target="_blank"
                       className="flex items-start gap-1 group"
                     >
-                      <span className="block">Athang ICT</span>
+                      <span className="block text-nowrap">Athang ICT</span>
                       <HiArrowUpRight
                         size={12}
                         className="transition-opacity duration-300 group-hover:opacity-100 opacity-0"
                       />
                     </Link>
-                    <p className="space-y-1 text-dark-400">
+                    <p className="space-y-1 text-dark-400 pb-2 md:pb-0 text-nowrap">
                       <span className="block">
                         Software Developer Internship
                       </span>
                       <span>Thimphu, Bhutan</span>
                     </p>
+                    <time className="block md:hiddenflex-none py-0.5 text-sm text-dark-400">
+                      July 2015 - Nov 2015
+                    </time>
                   </div>
                 </div>
-                <time className="flex-none py-0.5 text-sm text-dark-400">
+                <time className="hidden md:blockflex-none py-0.5 text-sm text-dark-400">
                   July 2015 - Nov 2015
                 </time>
               </li>
