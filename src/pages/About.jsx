@@ -34,9 +34,9 @@ const About = () => {
           <div className="max-w-lg text-base text-dark-400 space-y-6">
             <p>
               I began my career as a Software Developer Intern at Athang ICT,
-              followed by five years as a QA Engineer at Select Software Pty
-              Ltd, where I mastered software quality assurance and test
-              automation.
+              then spent five years as a QA Engineer collaborating directly with
+              Select Software Pty Ltd, where I developed expertise in software
+              quality assurance and built advanced test automation frameworks.
             </p>
             <p>
               Later, as a UI Engineer at Selise Digital Platforms, I developed
