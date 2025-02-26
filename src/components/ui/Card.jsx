@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Card = ({ title, subtitle, description, graphic, status, slug }) => {
   return (
     <Link to={`/projects/${slug}`}>
-      <div className="relative bg-dashed ring-1 dark:ring-dark-300 rounded-md shadow group">
+      <div className="relative bg-dashed ring-1 ring-dark-300 rounded-md shadow group">
         <div className="relative p-6 overflow-hidden rounded-md shrink-0">
           <img
             src={graphic}
@@ -14,7 +14,7 @@ const Card = ({ title, subtitle, description, graphic, status, slug }) => {
         </div>
         <div className="px-6 pb-6">
           <div className="flex items-center justify-between mb-6">
-            <h3 className="text-lg dark:text-white tracking-wider font-semibold font-bebas">
+            <h3 className="text-lg text-white tracking-wider font-semibold font-bebas">
               {title}
             </h3>
             <div
@@ -28,7 +28,7 @@ const Card = ({ title, subtitle, description, graphic, status, slug }) => {
             </div>
           </div>
 
-          <p className="dark:text-dark-400">{description}</p>
+          <p className="text-dark-400">{description}</p>
         </div>
         <div className="absolute top-10 right-11 bg-dark-700 border border-dark-300 p-1.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <HiArrowUpRight />

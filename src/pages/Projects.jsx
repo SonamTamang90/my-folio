@@ -6,7 +6,7 @@ const Projects = () => {
     <>
       <div className="max-w-5xl mx-auto px-11">
         <h1 className="font-bebas text-6xl tracking-wide mb-5">Projects</h1>
-        <p className="max-w-lg lg:text-lg dark:text-dark-400">
+        <p className="max-w-lg lg:text-lg text-dark-400">
           Here are some of projects that I build and still in progress
         </p>
 

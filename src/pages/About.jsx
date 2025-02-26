@@ -31,7 +31,7 @@ const About = () => {
       <div className="max-w-5xl mx-auto px-11">
         <h1 className="font-bebas text-6xl tracking-wide mb-5">About</h1>
         <div className="flex flex-col md:flex-row items-start gap-11 md:gap-8">
-          <div className="max-w-lg text-base dark:text-dark-400 space-y-6">
+          <div className="max-w-lg text-base text-dark-400 space-y-6">
             <p>
               I began my career as a Software Developer Intern at Athang ICT,
               followed by five years as a QA Engineer at Select Software Pty
@@ -63,7 +63,7 @@ const About = () => {
           <h2 className="font-bebas text-xl tracking-wider mb-8">
             Work Experience
           </h2>
-          <div className="bg-dashed p-6 border dark:border-dark-300">
+          <div className="bg-dashed p-6 border border-dark-300">
             <ul className="max-w-lg space-y-6">
               <li className="relative flex gap-x-4 pb-11">
                 <div className="absolute -bottom-6 left-0 top-0 flex w-6 justify-center">

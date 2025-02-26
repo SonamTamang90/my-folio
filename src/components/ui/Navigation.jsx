@@ -47,7 +47,7 @@ const Navigation = ({ setIsMobile }) => {
               {isActive && (
                 <motion.div
                   layoutId="active-nav"
-                  className="absolute inset-0 dark:bg-dark-200 dark:border-dark-100 border rounded-md"
+                  className="absolute inset-0 bg-dark-200 border-dark-100 border rounded-md"
                   transition={{
                     type: "spring",
                     stiffness: 400,
@@ -59,8 +59,8 @@ const Navigation = ({ setIsMobile }) => {
                 to={href}
                 className={`relative flex items-center gap-2 py-2.5 px-2 rounded-md z-10 ${
                   isActive
-                    ? "dark:text-white"
-                    : "dark:text-dark-400 hover:dark:text-white transition-colors"
+                    ? "text-white"
+                    : "text-dark-400 hover:text-white transition-colors"
                 }`}
               >
                 <Icon className="w-5 h-5" />

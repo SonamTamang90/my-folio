@@ -10,7 +10,7 @@ const Contact = () => {
     <>
       <div className="max-w-5xl mx-auto px-11">
         <h1 className="font-bebas text-6xl tracking-wide mb-5">Contact</h1>
-        <p className="max-w-lg lg:text-lg dark:text-dark-400">
+        <p className="max-w-lg lg:text-lg text-dark-400">
           Get in touch with me throught the following details. I'm always open
           to discussing new opportunities and collaborations.
         </p>

@@ -23,7 +23,7 @@ const ProjectDetails = () => {
         alt={project.title}
         className="mb-11 rounded-md"
       />
-      <div className="max-w-2xl text-base tracking-wide dark:text-dark-400 space-y-6">
+      <div className="max-w-2xl text-base tracking-wide text-dark-400 space-y-6">
         <p>{project.description[0]}</p>
         <p>{project.description[1]}</p>
         <p>{project.description[2]}</p>

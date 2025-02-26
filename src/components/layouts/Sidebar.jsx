@@ -67,7 +67,7 @@ export const MobileSidebar = ({ isMobile, setIsMobile }) => {
             animate="open"
             exit="closed"
             variants={sidebarVariants}
-            className="fixed block md:hidden w-[240px] dark:bg-dark-700 z-50 h-full border-r border-dark-300 transform 
+            className="fixed block md:hidden w-[240px] bg-dark-700 z-50 h-full border-r border-dark-300 transform 
         "
           >
             <button
@@ -93,7 +93,7 @@ export const MobileSidebar = ({ isMobile, setIsMobile }) => {
 const Sidebar = () => {
   return (
     <aside
-      className={`fixed dark:bg-dark-700 w-[240px] h-full border-r border-dark-300 hidden lg:block`}
+      className={`fixed bg-dark-700 w-[240px] h-full border-r border-dark-300 hidden lg:block`}
     >
       <div className="p-4 flex flex-col">
         <Logo />

@@ -9,20 +9,20 @@ const Hero = () => {
   return (
     <section>
       <h1 className="font-bebas text-6xl tracking-wide mb-5">Hey, I'm Sonam</h1>
-      <p className="max-w-lg text-base lg:text-lg dark:text-dark-400">
+      <p className="max-w-lg text-base lg:text-lg text-dark-400">
         Creative Frontend Developer focused on building engaging user interfaces
         and modern websites with precision and attention to detail.
       </p>
       <div className="flex items-center gap-6 mt-8">
         <Link
           to="/about"
-          className="dark:bg-dark-200 transition-colors dark:border-dark-100 border px-5 py-2.5 rounded-md duration-300 hover:dark:bg-dark-200/80"
+          className="bg-dark-200 transition-colors border-dark-100 border px-5 py-2.5 rounded-md duration-300 hover:bg-dark-200/80"
         >
           About
         </Link>
         <Link
           to="/contact"
-          className="dark:border-dark-100 border px-5 py-2.5 rounded-md transition-colors hover:dark:bg-dark-200"
+          className="border-dark-100 border px-5 py-2.5 rounded-md transition-colors hover:bg-dark-200"
         >
           Get in touch
         </Link>
