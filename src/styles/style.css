@@ -12,7 +12,7 @@
 
 @layer base {
   body {
-    @apply h-full dark:bg-dark-900 dark:text-white text-sm;
+    @apply h-full bg-dark-900 text-white text-sm;
     /* color: rgb(173, 255, 47); */
   }
 }

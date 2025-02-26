@@ -92,7 +92,7 @@ const About = () => {
                   </div>
                 </div>
                 <time className="flex-none py-0.5 text-sm text-dark-400">
-                  Dec 2022 - Till Date
+                  Feb 2022 - Till Date
                 </time>
               </li>
               <li className="relative flex gap-x-4">
@@ -152,7 +152,7 @@ const About = () => {
                   </div>
                 </div>
                 <time className="flex-none py-0.5 text-sm text-dark-400">
-                  Feb 2016 - Dec 2020
+                  Jan 2016 - Jan 2021
                 </time>
               </li>
               <li className="relative flex gap-x-4">
@@ -181,7 +181,7 @@ const About = () => {
                   </div>
                 </div>
                 <time className="flex-none py-0.5 text-sm text-dark-400">
-                  May 2014 - Jan 2015
+                  July 2015 - Nov 2015
                 </time>
               </li>
             </ul>
