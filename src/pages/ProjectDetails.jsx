@@ -15,13 +15,13 @@ const ProjectDetails = () => {
   return (
     <div className="relative max-w-5xl mx-auto px-11 pb-20">
       <BackButton />
-      <h1 className="font-bebas text-6xl tracking-wide mb-11">
+      <h1 className="font-bebas text-5xl md:text-6xl tracking-wide mb-8 md:mb-11">
         {project.title}
       </h1>
       <img
         src={project.screenShot}
         alt={project.title}
-        className="mb-11 rounded-md"
+        className="mb-8 md:mb-11 rounded-md"
       />
       <div className="max-w-2xl text-base tracking-wide text-dark-400 space-y-6">
         <p>{project.description[0]}</p>
@@ -30,7 +30,7 @@ const ProjectDetails = () => {
       </div>
       <div className="my-11">
         <h2 className="font-bebas text-xl tracking-wider mb-8">Tools Used</h2>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           {project.technologies.map((technology, index) => (
             <div
               key={index}
