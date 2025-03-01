@@ -131,7 +131,7 @@ const About = () => {
                     </time>
                   </div>
                 </div>
-                <time className="hidden md:blockflex-none py-0.5 text-sm text-dark-400">
+                <time className="hidden md:block flex-none py-0.5 text-sm text-dark-400">
                   Feb 2021 - Oct 2022
                 </time>
               </li>
@@ -198,7 +198,7 @@ const About = () => {
                     </time>
                   </div>
                 </div>
-                <time className="hidden md:blockflex-none py-0.5 text-sm text-dark-400">
+                <time className="hidden md:block flex-none py-0.5 text-sm text-dark-400">
                   July 2015 - Nov 2015
                 </time>
               </li>
