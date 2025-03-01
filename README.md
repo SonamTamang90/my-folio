@@ -1,6 +1,6 @@
-# React + Vite
+## My Folio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio dark themed websites build using React, Tailwind and Framer Motion for animation.
 
 Currently, two official plugins are available:
 
