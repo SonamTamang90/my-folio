@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <Link to="/" className="flex items-center gap-2">
       <img
-        src="/images/me.png"
+        src="/images/me.webp"
         alt="Sonam Tamang"
         className="h-10 rounded-full"
       />
