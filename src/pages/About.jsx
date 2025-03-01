@@ -70,13 +70,18 @@ const About = () => {
               high-quality solutions
             </motion.p>
           </div>
-          <div className="w-[280px] h-[280px] overflow-hidden rounded-md rotate-3 ">
+          <motion.div
+            initial={{ x: 50, opacity: 0, rotate: 8 }}
+            animate={{ x: 0, opacity: 1, rotate: 4 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
+            className="w-[280px] h-[280px] overflow-hidden rounded-md transform"
+          >
             <img
               src="./images/me.png"
               alt="Sonam Tamang"
               className="w-full grayscale"
             />
-          </div>
+          </motion.div>
         </div>
 
         <div className="mt-20 pb-20">
