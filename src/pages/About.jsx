@@ -1,5 +1,6 @@
 import { HiArrowUpRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import { easeInOut, motion } from "framer-motion";
 
 const experience = [
   {
@@ -29,26 +30,45 @@ const About = () => {
   return (
     <>
       <div className="max-w-5xl mx-auto px-11">
-        <h1 className="font-bebas text-6xl tracking-wide mb-5">About</h1>
+        <motion.h1
+          initial={{ y: -50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="font-bebas text-6xl tracking-wide mb-5"
+        >
+          About
+        </motion.h1>
         <div className="flex flex-col md:flex-row items-start gap-11 md:gap-8">
           <div className="max-w-lg text-base text-dark-400 space-y-6">
-            <p>
+            <motion.p
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            >
               I began my career as a Software Developer Intern at Athang ICT,
               then spent five years as a QA Engineer collaborating directly with
               Select Software Pty Ltd, where I developed expertise in software
               quality assurance and built advanced test automation frameworks.
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
+            >
               Later, as a UI Engineer at Selise Digital Platforms, I developed
               responsive user interfaces for various projects while
               collaborating with cross-functional teams.
-            </p>
-            <p>
+            </motion.p>
+            <motion.p
+              initial={{ x: -50, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, ease: "easeInOut", delay: 0.2 }}
+            >
               Throughout my career, I've gained extensive experience in software
               development lifecycle, from concept to deployment, working closely
               with designers, developers, and project managers to deliver
               high-quality solutions
-            </p>
+            </motion.p>
           </div>
           <div className="w-[280px] h-[280px] overflow-hidden rounded-md rotate-3 ">
             <img
@@ -67,7 +87,12 @@ const About = () => {
             <ul className="max-w-lg space-y-6">
               <li className="relative flex gap-x-4 pb-11">
                 <div className="absolute -bottom-6 left-0 top-0 flex w-6 justify-center">
-                  <div className="w-px bg-dark-400"></div>
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "100%", opacity: 1 }}
+                    transition={{ duration: 0.5, ease: "easeInOut" }}
+                    className="w-px bg-dark-400"
+                  ></motion.div>
                 </div>
                 <div className="relative flex flex-wrap size-6 flex-none items-center justify-center bg-dark-700">
                   <div className="size-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
@@ -100,9 +125,18 @@ const About = () => {
                   Feb 2022 - Till Date
                 </time>
               </li>
-              <li className="relative flex gap-x-4">
+              <li className="relative flex gap-x-4 pb-11">
                 <div className="absolute -bottom-6 left-0 top-0 flex w-6 justify-center">
-                  <div className="w-px bg-dark-400"></div>
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "100%", opacity: 1 }}
+                    transition={{
+                      duration: 0.5,
+                      ease: "easeInOut",
+                      delay: 0.7,
+                    }}
+                    className="w-px bg-dark-400"
+                  ></motion.div>
                 </div>
                 <div className="relative flex size-6 flex-none items-center justify-center bg-dark-700">
                   <div className="size-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
@@ -135,9 +169,18 @@ const About = () => {
                   Feb 2021 - Oct 2022
                 </time>
               </li>
-              <li className="relative flex gap-x-4 py-11">
+              <li className="relative flex gap-x-4 pb-11">
                 <div className="absolute -bottom-6 left-0 top-0 flex w-6 justify-center">
-                  <div className="w-px bg-dark-400"></div>
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "100%", opacity: 1 }}
+                    transition={{
+                      duration: 0.5,
+                      ease: "easeInOut",
+                      delay: 0.8,
+                    }}
+                    className="w-px bg-dark-400"
+                  ></motion.div>
                 </div>
                 <div className="relative flex size-6 flex-none items-center justify-center bg-dark-700">
                   <div className="size-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>

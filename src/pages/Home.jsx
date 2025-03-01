@@ -4,15 +4,28 @@ import CommitActivity from "../components/ui/CommitsActivity";
 import { GITHUB_TOKEN } from "../../config";
 import { projects } from "../data/projects";
 import { HiOutlineArrowRight } from "react-icons/hi2";
+import { easeIn, motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <section>
-      <h1 className="font-bebas text-6xl tracking-wide mb-5">Hey, I'm Sonam</h1>
-      <p className="max-w-lg text-base lg:text-lg text-dark-400">
+      <motion.h1
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="font-bebas text-6xl tracking-wide mb-5"
+      >
+        Hey, I'm Sonam
+      </motion.h1>
+      <motion.p
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="max-w-lg text-base lg:text-lg text-dark-400"
+      >
         Creative Frontend Developer focused on building engaging user interfaces
         and modern websites with precision and attention to detail.
-      </p>
+      </motion.p>
       <div className="flex items-center gap-6 mt-8">
         <Link
           to="/about"
@@ -49,7 +62,7 @@ const ProjectsHighlights = () => {
       </div>
 
       <div className="grid sm:grid-cols-2 gap-6 mb-11">
-        {featuredProject.map((project) => (
+        {featuredProject.map((project, index) => (
           <Card
             key={project.id}
             title={project.title}
@@ -57,6 +70,7 @@ const ProjectsHighlights = () => {
             description={project.intro}
             status={project.status}
             slug={project.slug}
+            index={index}
           />
         ))}
       </div>
