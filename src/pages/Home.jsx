@@ -4,7 +4,7 @@ import CommitActivity from "../components/ui/CommitsActivity";
 import { GITHUB_TOKEN } from "../../config";
 import { projects } from "../data/projects";
 import { HiOutlineArrowRight } from "react-icons/hi2";
-import { easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="font-bebas text-6xl tracking-wide mb-5"
       >
-        Hey, I'm Sonam
+        Hey, I&apos;m Sonam
       </motion.h1>
       <motion.p
         initial={{ y: 50, opacity: 0 }}

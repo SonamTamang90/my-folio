@@ -1,30 +1,6 @@
 import { HiArrowUpRight } from "react-icons/hi2";
 import { Link } from "react-router-dom";
-import { easeInOut, motion } from "framer-motion";
-
-const experience = [
-  {
-    id: 1,
-    name: "Selise Digital Platforms",
-    role: "UI Engineer",
-    startYear: "2021",
-    endYear: "2022",
-  },
-  {
-    id: 2,
-    name: "Select Software Pty Ltd",
-    role: "QA Tester",
-    startYear: "2016",
-    endYear: "2020",
-  },
-  {
-    id: 3,
-    name: "Athang ICT",
-    role: "Software Developer Internship",
-    startYear: "2014",
-    endYear: "2015",
-  },
-];
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -77,7 +53,7 @@ const About = () => {
             className="w-[280px] h-[280px] overflow-hidden rounded-md transform"
           >
             <img
-              src="./images/me.png"
+              src="./images/me.webp"
               alt="Sonam Tamang"
               className="w-full grayscale"
             />
