@@ -6,7 +6,7 @@ export const projects = [
     title: "UI Elements Library",
     video: "/ui-elements.mp4",
     intro:
-      "Collections of reusuable UI components made for React and HTML with instant copy-paste code build using Next JS.",
+      "A collection of reusable React and HTML UI components with copy-paste feature built with Next.js.",
     description: [
       "I created a practical UI Elements Library that collects and organizes modern component designs from across the web. Built with Next.js and Tailwind CSS, this project serves as a personal collection of ready-to-use components in both HTML and React formats.",
       "The library focuses on simplicity and quick implementation, allowing developers to easily copy and paste components into their projects. Each component includes both HTML and React versions with Tailwind CSS styling, making it versatile for different project requirements. This approach eliminates the need to recreate common UI elements from scratch.",
