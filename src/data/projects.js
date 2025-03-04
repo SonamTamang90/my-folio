@@ -79,6 +79,7 @@ export const projects = [
     ],
     images: ["/images/project-3.webp"],
     screenShot: ["/images/screenshot-3.webp"],
+    liveUrl: "https://gmc-bt.vercel.app",
     githubUrl: "https://github.com/SonamTamang90/gmc",
     role: "Frontend Developer",
     status: "Active",
