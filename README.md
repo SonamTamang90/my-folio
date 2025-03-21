@@ -2,7 +2,9 @@
 
 A modern, dark-themed personal portfolio website built with React, Tailwind CSS, and Framer Motion animations.
 
-## Features
+![My Folio Preview](./screenshots/portfolio-preview.png)
+
+## 🚀Features
 
 - **Responsive Design**: Looks great on devices of all sizes
 - **Dark Theme**: Easy on the eyes with a sleek dark mode interface
