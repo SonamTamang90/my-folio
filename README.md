@@ -2,6 +2,8 @@
 
 A modern, dark-themed personal portfolio website built with React, Tailwind CSS, and Framer Motion animations.
 
+🔗 **[View Live](https://sonamtamang.com)**
+
 ## 🚀 Features
 
 - **Responsive Design**: Looks great on devices of all sizes
