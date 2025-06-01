@@ -6,6 +6,8 @@ import Projects from "./pages/Projects";
 import Stacks from "./pages/Stacks";
 import Contact from "./pages/Contact";
 import ProjectDetails from "./pages/ProjectDetails";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
           <Route path="/stacks" element={<Stacks />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects/:slug" element={<ProjectDetails />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Route>
       </Routes>
     </BrowserRouter>

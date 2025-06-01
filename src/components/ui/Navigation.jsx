@@ -1,4 +1,4 @@
-import { FolderDot, Home, Laptop, Mail, User } from "lucide-react";
+import { FolderDot, Home, Laptop, Mail, User, PenSquare } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -22,6 +22,11 @@ const links = [
     label: "Stacks",
     href: "/stacks",
     icon: Laptop,
+  },
+  {
+    label: "Blog",
+    href: "/blog",
+    icon: PenSquare,
   },
   {
     label: "Contact",
