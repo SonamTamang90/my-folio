@@ -35,7 +35,7 @@ const Card = ({
               <h3 className="text-lg text-white tracking-wider font-semibold font-bebas">
                 {title}
               </h3>
-              <div
+              {/* <div
                 className={`text-xs rounded-full capitalize py-1 px-3 border ${
                   status === "Active"
                     ? "border-green-300 text-green-300"
@@ -43,7 +43,7 @@ const Card = ({
                 } `}
               >
                 <span>{status}</span>
-              </div>
+              </div> */}
             </div>
 
             <p className="text-dark-400">{description}</p>

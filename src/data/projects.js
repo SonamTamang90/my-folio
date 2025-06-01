@@ -56,7 +56,7 @@ export const projects = [
     screenShot: ["/images/screenshot-2.webp"],
     githubUrl: "https://github.com/SonamTamang90/my-folio",
     role: "Frontend Developer",
-    status: "Completed",
+    status: "",
   },
   {
     id: 3,
@@ -82,7 +82,7 @@ export const projects = [
     liveUrl: "https://gmc-bt.vercel.app",
     githubUrl: "https://github.com/SonamTamang90/gmc",
     role: "Frontend Developer",
-    status: "Active",
+    status: "",
   },
   {
     id: 3,
@@ -153,13 +153,13 @@ export const devTools = [
 export const coreTech = [
   {
     id: 1,
-    name: "HTML",
+    name: "HTML5",
     description: "Proficient",
     icon: "/icons/html.svg",
   },
   {
     id: 2,
-    name: "CSS",
+    name: "CSS3",
     description: "Proficient",
     icon: "/icons/css.svg",
   },
@@ -180,6 +180,12 @@ export const coreTech = [
     name: "Javascript",
     description: "Proficient",
     icon: "/icons/javascript.svg",
+  },
+  {
+    id: 5,
+    name: "Typescript",
+    description: "Proficient",
+    icon: "/icons/typescript.svg",
   },
 ];
 
@@ -234,6 +240,12 @@ export const backend = [
     name: "PostgreSQL",
     description: "intermediate",
     icon: "/icons/postgresql.svg",
+  },
+  {
+    id: 3,
+    name: "MySQL",
+    description: "Proficient",
+    icon: "/icons/mysql.svg",
   },
 ];
 
