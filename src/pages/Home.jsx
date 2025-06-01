@@ -85,7 +85,7 @@ const Home = () => {
       <ProjectsHighlights />
       <CommitActivity
         repositories={[
-          { owner: "SonamTamang90", repo: "ui-elements" },
+          { owner: "SonamTamang90", repo: "apply-easy" },
           { owner: "SonamTamang90", repo: "my-folio" },
         ]}
         token={GITHUB_TOKEN}

@@ -37,7 +37,7 @@ const growLine = {
 const workExperience = [
   {
     company: "Metcash Trading Ltd",
-    position: "Store Person",
+    position: "Inventory Receiver",
     location: "Perth, Australia",
     period: "Feb 2022 - Till Date",
     url: "https://www.metcash.com/",
@@ -51,7 +51,7 @@ const workExperience = [
   },
   {
     company: "Multirational Pty Ltd",
-    position: "QA Tester",
+    position: "Software QA",
     location: "Thimphu, Bhutan",
     period: "Jan 2016 - Jan 2021",
     url: "https://multirational.bt",
