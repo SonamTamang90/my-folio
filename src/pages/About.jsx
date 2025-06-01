@@ -44,14 +44,14 @@ const workExperience = [
   },
   {
     company: "Selise Digital Platforms",
-    position: "UI Engineer",
+    position: "Software Engineer(UI)",
     location: "Thimphu, Bhutan",
     period: "Feb 2021 - Oct 2022",
     url: "https://selisegroup.com",
   },
   {
     company: "Multirational Pty Ltd",
-    position: "Software QA",
+    position: "Software Developer",
     location: "Thimphu, Bhutan",
     period: "Jan 2016 - Jan 2021",
     url: "https://multirational.bt",
