@@ -11,7 +11,7 @@ I began by sketching a simple layout and listing the sections I wanted: About, P
 
 One of my favorite parts was adding little touches—like smooth animations with Framer Motion and a GitHub activity feed. I also made sure the site works well on mobile and dark mode looks great.
 
-The biggest lesson? Just start. Even if it's not perfect, you'll learn so much by building and iterating. Now, I&apos;m proud to have a portfolio that grows with me and shows who I am as a developer.`,
+The biggest lesson? Just start. Even if it's not perfect, you'll learn so much by building and iterating. Now, I'm proud to have a portfolio that grows with me and shows who I am as a developer.`,
     slug: "building-portfolio-react-tailwind",
   },
   {
