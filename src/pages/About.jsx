@@ -99,10 +99,10 @@ const About = () => {
       <div className="flex flex-col md:flex-row items-start gap-11 md:gap-8">
         <div className="max-w-lg text-base text-dark-400 space-y-6">
           <motion.p initial="hidden" animate="visible" variants={fadeInLeft}>
-            I began my career as a Software Developer Intern at Athang ICT, then
-            spent five years as a QA Engineer collaborating directly with Select
-            Software Pty Ltd, where I developed expertise in software quality
-            assurance and built advanced test automation frameworks.
+            I'm a passionate frontend engineer who transforms complex ideas into 
+            intuitive digital experiences. With over 8 years in the tech industry, 
+            I've mastered the art of bridging design and functionality, creating 
+            solutions that users love and businesses rely on.
           </motion.p>
 
           <motion.p
@@ -111,9 +111,9 @@ const About = () => {
             variants={fadeInLeft}
             custom={0.1}
           >
-            Later, as a UI Engineer at Selise Digital Platforms, I developed
-            responsive user interfaces for various projects while collaborating
-            with cross-functional teams.
+            My journey spans from developing C# .NET billing systems and ensuring 
+            enterprise-grade reliability to crafting modern React applications 
+            that deliver measurable performance improvements and drive user engagement.
           </motion.p>
 
           <motion.p
@@ -122,10 +122,10 @@ const About = () => {
             variants={fadeInLeft}
             custom={0.2}
           >
-            Throughout my career, I've gained extensive experience in software
-            development lifecycle, from concept to deployment, working closely
-            with designers, developers, and project managers to deliver
-            high-quality solutions
+            I thrive in collaborative environments where innovation meets precision. 
+            Whether mentoring teams, optimizing performance, or solving complex 
+            technical challenges, I bring both technical excellence and creative 
+            problem-solving to every project.
           </motion.p>
         </div>
 
