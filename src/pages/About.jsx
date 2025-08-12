@@ -37,7 +37,7 @@ const growLine = {
 const workExperience = [
   {
     company: "Metcash Trading Ltd",
-    position: "Inventory Receiver",
+    position: "Store Person",
     location: "Perth, Australia",
     period: "Feb 2022 - Dec 2024",
     url: "https://www.metcash.com/",
