@@ -34,3 +34,16 @@
 .timeline:not(:last-child) {
   padding-bottom: 0;
 }
+
+@keyframes shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shine {
+  animation: shine linear infinite;
+}

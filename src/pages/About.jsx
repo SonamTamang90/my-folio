@@ -39,29 +39,41 @@ const workExperience = [
     company: "Metcash Trading Ltd",
     position: "Inventory Receiver",
     location: "Perth, Australia",
-    period: "Feb 2022 - Till Date",
+    period: "Feb 2022 - Dec 2024",
     url: "https://www.metcash.com/",
+    responsibilities: [
+      "Managed inventory operations and quality control while optimizing warehouse processes for distribution centers",
+    ],
   },
   {
     company: "Selise Digital Platforms",
-    position: "Software Engineer(UI)",
+    position: "Software Engineer (UI)",
     location: "Thimphu, Bhutan",
-    period: "Feb 2021 - Oct 2022",
+    period: "February 2021 - October 2022",
     url: "https://selisegroup.com",
+    responsibilities: [
+      "Built responsive UIs with React/TypeScript/Tailwind CSS, developed reusable component library, and mentored junior developers while improving performance by 20-30%",
+    ],
   },
   {
-    company: "Multirational Pty Ltd",
+    company: "Select Software Pty Ltd",
     position: "Software Developer",
     location: "Thimphu, Bhutan",
-    period: "Jan 2016 - Jan 2021",
+    period: "January 2016 - January 2021",
     url: "https://multirational.bt",
+    responsibilities: [
+      "Maintained C# .NET modules for Selcomm billing platform, executed comprehensive QA testing, and contributed to technical documentation",
+    ],
   },
   {
     company: "Athang ICT",
-    position: "Software Developer Internship",
+    position: "Technical Training Program",
     location: "Thimphu, Bhutan",
-    period: "July 2015 - Nov 2015",
+    period: "May 2014 - December 2014",
     url: "https://www.athang.com",
+    responsibilities: [
+      "Completed intensive 6-month training in software development, mobile apps, network infrastructure, and created working prototypes",
+    ],
   },
 ];
 

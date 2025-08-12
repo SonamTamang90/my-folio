@@ -14,7 +14,8 @@ const growLine = {
 };
 
 const TimelineItem = ({ experience, isLast, index }) => {
-  const { company, position, location, period, url } = experience;
+  const { company, position, location, period, url, responsibilities } =
+    experience;
 
   return (
     <li className="relative flex gap-x-4 pb-11">
@@ -35,27 +36,46 @@ const TimelineItem = ({ experience, isLast, index }) => {
       </div>
 
       <div className="flex-auto py-0.5 text-sm">
-        <div className="space-y-1">
-          <Link
-            to={url}
-            target="_blank"
-            className="flex items-start gap-1 group"
-          >
-            <span className="block text-nowrap">{company}</span>
-            <HiArrowUpRight
-              size={12}
-              className="transition-opacity duration-300 group-hover:opacity-100 opacity-0"
-            />
-          </Link>
+        <div className="space-y-3">
+          <div className="space-y-1">
+            <Link
+              to={url}
+              target="_blank"
+              className="flex items-start gap-1 group"
+            >
+              <span className="block text-nowrap font-semibold text-white">
+                {company}
+              </span>
+              <HiArrowUpRight
+                size={12}
+                className="transition-opacity duration-300 group-hover:opacity-100 opacity-0"
+              />
+            </Link>
 
-          <p className="space-y-1 text-nowrap pb-2 md:pb-0 text-dark-400">
-            <span className="block">{position}</span>
-            <span>{location}</span>
-          </p>
+            <p className="space-y-1 text-nowrap pb-2 md:pb-0 text-dark-400">
+              <span className="block font-medium text-gray-300">
+                {position}
+              </span>
+              <span>{location}</span>
+            </p>
 
-          <time className="md:hidden flex-none py-0.5 text-sm text-dark-400">
-            {period}
-          </time>
+            <time className="md:hidden flex-none py-0.5 text-sm text-dark-400">
+              {period}
+            </time>
+          </div>
+
+          {responsibilities && responsibilities.length > 0 && (
+            <div className="space-y-2">
+              <ul className="space-y-1.5 text-xs text-dark-400">
+                {responsibilities.map((responsibility, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <span className="w-1 h-1 rounded-full bg-[#00796e] mt-1.5 flex-shrink-0"></span>
+                    <span className="leading-relaxed">{responsibility}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
 
@@ -73,6 +93,7 @@ TimelineItem.propTypes = {
     location: PropTypes.string.isRequired,
     period: PropTypes.string.isRequired,
     url: PropTypes.string.isRequired,
+    responsibilities: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
   isLast: PropTypes.bool.isRequired,
   index: PropTypes.number.isRequired,
@@ -81,7 +102,7 @@ TimelineItem.propTypes = {
 export const ExperienceTimeline = ({ experiences }) => {
   return (
     <div className="bg-dashed py-6 px-3 md:p-6 border border-dark-300">
-      <ul className="max-w-lg space-y-6">
+      <ul className="max-w-2xl space-y-6">
         {experiences.map((experience, index) => (
           <TimelineItem
             key={experience.company}
@@ -103,6 +124,7 @@ ExperienceTimeline.propTypes = {
       location: PropTypes.string.isRequired,
       period: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
+      responsibilities: PropTypes.arrayOf(PropTypes.string),
     })
   ).isRequired,
 };

@@ -1,43 +1,67 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const blogPosts = [
   {
     id: 1,
-    title: "How I Built My Portfolio with React & Tailwind",
-    date: "2024-06-01",
+    title: "Tailwind CSS v4: A New Era of Styling",
+    date: "2024-08-12",
     excerpt:
-      "A behind-the-scenes look at the design and development process of my portfolio website.",
-    slug: "building-portfolio-react-tailwind",
+      "Exploring the game-changing improvements in Tailwind CSS v4, from the new Rust engine to zero-configuration setup.",
+    slug: "tailwind-css-v4-new-era",
   },
-  //   {
-  //     id: 2,
-  //     title: "Tips for Modern Frontend Animations",
-  //     date: "2024-05-20",
-  //     excerpt:
-  //       "My favorite libraries and techniques for adding delightful motion to web interfaces.",
-  //     slug: "modern-frontend-animations",
-  //   },
-  //   {
-  //     id: 3,
-  //     title: "Why Accessibility Matters in Web Design",
-  //     date: "2024-05-10",
-  //     excerpt:
-  //       "Simple steps to make your site more inclusive and accessible to everyone.",
-  //     slug: "accessibility-in-web-design",
-  //   },
+  {
+    id: 2,
+    title: "Tips for Modern Frontend Animations",
+    date: "2024-05-20",
+    excerpt:
+      "My favorite libraries and techniques for adding delightful motion to web interfaces.",
+    slug: "modern-frontend-animations",
+  },
+  {
+    id: 3,
+    title: "Why Accessibility Matters in Web Design",
+    date: "2024-05-10",
+    excerpt:
+      "Simple steps to make your site more inclusive and accessible to everyone.",
+    slug: "accessibility-in-web-design",
+  },
 ];
 
 const Blog = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6 py-16">
-      <header className="mb-12 text-center">
-        <h1 className="font-bebas text-4xl md:text-5xl mb-3 tracking-wide">
+    <div className="max-w-5xl mx-auto px-11 py-16">
+      <header className="mb-12">
+        <motion.h1
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { y: -50, opacity: 0 },
+            visible: {
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.5, ease: "easeInOut" },
+            },
+          }}
+          className="font-bebas text-6xl tracking-wide mb-5"
+        >
           Blog
-        </h1>
-        <p className="text-dark-400 text-lg max-w-2xl mx-auto">
-          Insights, tutorials, and stories from my journey as a frontend
-          developer.
-        </p>
+        </motion.h1>
+        <motion.p 
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { y: -20, opacity: 0 },
+            visible: {
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.5, ease: "easeInOut", delay: 0.1 },
+            },
+          }}
+          className="text-dark-400 text-lg max-w-2xl"
+        >
+          Exploring modern web development through practical experiences, technical deep-dives, and lessons learned from building real-world applications.
+        </motion.p>
       </header>
       <section className="grid gap-8 md:grid-cols-2">
         {blogPosts.map((post) => (

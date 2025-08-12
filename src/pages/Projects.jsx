@@ -1,6 +1,8 @@
 import Card from "../components/ui/Card";
 import { projects } from "../data/projects";
 import { motion } from "framer-motion";
+import { HiArrowUpRight } from "react-icons/hi2";
+import ShinyText from "../components/animations/ShinyText";
 
 const Projects = () => {
   return (
@@ -37,6 +39,23 @@ const Projects = () => {
               />
             ))}
         </div>
+
+        <motion.div
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
+          className="flex justify-center mt-12"
+        >
+          <a
+            href="https://github.com/sonamtamang90"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-[#00796e] hover:bg-[#005a52] text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200"
+          >
+            <ShinyText text="Show More Projects" speed={3} />
+            <HiArrowUpRight size={18} />
+          </a>
+        </motion.div>
       </div>
     </>
   );
